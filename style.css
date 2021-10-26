@@ -277,7 +277,7 @@ color: white;
     color: #444343;
 }
 .quizleaderboard{
-    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
     display: flex;
     flex-direction: column;
