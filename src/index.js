@@ -6,7 +6,7 @@ import Form from "./components/create/create"
 import Quiz from "./components/quiz/quiz"
 import Navbar from "./components/navbar"
 import Leaderboard from "./components/leaderboard/leaderboard"
-
+import "./style.css"
 ReactDOM.render(
   <Router>
     <Switch>
