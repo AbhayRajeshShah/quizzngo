@@ -82,9 +82,8 @@ function Quiz(){
                     index=i;
                 }
             })
-            if(tempUser.length>=1){
                 tempUser.splice(index,1);
-            }
+
 
             setTimeout(()=>{
                 tempUser.push({
@@ -112,10 +111,13 @@ function Quiz(){
             let tempUsers = thisQuiz[0].users;
             tempUsers.push({
                 user:name,
-                score:smh
+                score:0
             })
             setusercol(tempUsers);
-            db.collection("quizzes").doc(id).update({users:usercol});
+            setTimeout(()=>{
+                db.collection("quizzes").doc(id).update({users:tempUsers});
+            },500)
+            
     
         }
         
